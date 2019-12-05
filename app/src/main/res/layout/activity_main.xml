@@ -8,39 +8,71 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
 
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_person_pin_black_24dp"
+    >
+
+</LinearLayout>
 
     <TextView
-        android:hint="Login Form"
+        android:text="LOGIN FORM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:textSize="50sp"
+        android:textSize="24sp"
+        android:textColor="#A93226"
         android:layout_gravity="center"/>
 
     <EditText
         android:id="@+id/etusername"
-        android:layout_margin="10dp"
-        android:textSize="30sp"
-        android:hint="Enter Username"
-        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="  Enter Username"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:layout_width="300dp"
+        android:textColor="#7B241C"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/etpassword"
-        android:layout_margin="10dp"
-        android:textSize="30sp"
-        android:hint="Enter password"
-        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:text="  Enter password"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:layout_width="300dp"
+        android:textColor="#7B241C"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:hint="Login"
+        android:text="Login"
         android:id="@+id/btnlogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#A93226"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvhavac"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif-black"/>
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="Don't Have an Account?"
+        android:textColor="#A93226" />
+
+    <Button
+        android:text="Register"
+        android:id="@+id/btnreg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#A93226"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
 
 </LinearLayout>
