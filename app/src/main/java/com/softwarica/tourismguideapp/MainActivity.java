@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 public  class MainActivity extends AppCompatActivity {
-    private Button button;
+    private TextView tvregister;
 
 
 
@@ -22,19 +22,17 @@ public  class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button =findViewById(R.id.btnlogin);
+        tvregister =findViewById(R.id.tvregister);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        tvregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openregistrationlayout();
+                Intent intent=new Intent(MainActivity.this,registrationactivity.class);
+                startActivity(intent);
             }
         });
 
     }
 
-    public void openregistrationlayout(){
-        Intent intent=new Intent(this, Activity.class) ;
-        startActivity(intent);
-    }
+
 }

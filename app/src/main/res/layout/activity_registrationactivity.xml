@@ -1,117 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <ImageView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/registrationlogo"
-        android:layout_margin="50dp"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bgcolor">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/registrationicon"
+            android:layout_margin="50dp"
 
-    <TextView
-        android:text="REGISTRATION FORM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-30dp"
-        android:textSize="24sp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        />
+            />
 
-    <EditText
-        android:id="@+id/etgoodname"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Enter Your Goodname"
-        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:text="REGISTRATION FORM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:textSize="24sp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
 
-
-    <EditText
-        android:id="@+id/etlocation"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Enter Your Address"
-        android:drawableLeft="@drawable/ic_add_location_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/etemail"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Enter Your Email"
-        android:drawableLeft="@drawable/ic_email_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/etusername"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Enter Username"
-        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/etpassword"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Enter Password"
-        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/etconfirmpassword"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Confirm Password"
-        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-    <TextView
-
-        android:id="@+id/etDOB"
-        android:layout_margin="5dp"
-        android:textSize="15sp"
-        android:text="   Date of Birth"
-        android:drawableLeft="@drawable/ic_date_range_black_24dp"
-        android:layout_width="250dp"
-        android:textColor="#EE3E1A"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        />
-    <Button
-        android:text="REGISTER"
-        android:id="@+id/btnreg"
-        android:layout_width="200dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
-        android:background="#FFEE3E1A"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        />
+        <EditText
+            android:id="@+id/etgoodname"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Enter Your Goodname"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
 
 
+        <EditText
+            android:id="@+id/etlocation"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Enter Your Address"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Enter Your Email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Enter Username"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Enter Password"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etconfirmpassword"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Confirm Password"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/etDOB"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="   Date of Birth"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:layout_width="250dp"
+            android:textColor="#EE3E1A"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:text="REGISTER"
+            android:id="@+id/btnreg"
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="#FFEE3E1A"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
 
 
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>

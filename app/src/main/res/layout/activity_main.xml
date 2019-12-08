@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,13 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bgcolor"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bgcolor"
+        >
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:src="@drawable/loginlogoicon"
-        android:layout_marginTop="-80dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="-20dp"
         android:padding="30dp"/>
 
@@ -30,6 +37,12 @@
         android:layout_gravity="center"
         android:textStyle="bold"
         />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent">
 
     <EditText
         android:id="@+id/etusername"
@@ -40,15 +53,28 @@
         android:layout_width="300dp"
         android:textColor="#EE3E1A"
         android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/colorAccent"
+            app:passwordToggleEnabled="true">
 
     <EditText
         android:id="@+id/etpassword"
         android:textSize="20sp"
+        android:layout_margin="20dp"
         android:text="  Enter password"
         android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
         android:layout_width="300dp"
         android:textColor="#EE3E1A"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:text="Login"
@@ -62,28 +88,17 @@
         />
 
     <TextView
-        android:id="@+id/tvhavac"
+        android:id="@+id/tvregister"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:layout_marginRight="60dp"
         android:text="Don't Have an Account?"
         android:textStyle="bold"
         android:textSize="15dp"
         android:fontFamily="sans-serif"
         android:textColor="#EE3E1A" />
 
-    <Button
-        android:text="Register"
-        android:id="@+id/btnreg"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="#EE3E1A"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="-30dp"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"/>
 
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
