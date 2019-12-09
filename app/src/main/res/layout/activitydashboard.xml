@@ -72,7 +72,36 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
+                        android:src="@drawable/home"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Home"
+                        android:layout_margin="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:elevation="60dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/locate"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -85,6 +114,7 @@
 
                 </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,13 +134,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
+                        android:src="@drawable/conversation"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Location"
+                        android:text="Chat"
                         android:layout_margin="12dp"/>
 
 
@@ -136,13 +166,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
+                        android:src="@drawable/weather"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Location"
+                        android:text="Weather"
                         android:layout_margin="12dp"/>
 
 
@@ -168,13 +198,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
+                        android:src="@drawable/guide"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Location"
+                        android:text="Guide"
                         android:layout_margin="12dp"/>
 
 
@@ -200,13 +230,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
+                        android:src="@drawable/notification"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Location"
+                        android:text="Notification"
                         android:layout_margin="12dp"/>
 
 
@@ -232,13 +262,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
+                        android:src="@drawable/near"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Location"
+                        android:text="Whats Near me?"
                         android:layout_margin="12dp"/>
 
 
@@ -264,45 +294,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
-                    <TextView
+                        android:src="@drawable/find"/>
+                    <TextViewk
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textSize="18sp"
-                        android:text="Location"
-                        android:layout_margin="12dp"/>
-
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:elevation="60dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="15dp"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/santa"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:text="Location"
+                        android:text="Find"
                         android:layout_margin="12dp"/>
 
 
